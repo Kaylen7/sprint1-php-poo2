@@ -31,4 +31,4 @@ $cercle = new Cercle(5);
 
 echo "El triangle de 2 x 5 té una àrea de: " . $triangle->getArea() . "<br/>";
 echo "El rectangle de 6 x 2.9 té una àrea de: " . $rectangle->getArea() . "<br/>";
-echo "El cercle de diàmetre 5 té una àrea de: " . number_format($cercle->getArea(), 2, ".", " ") . "<br/>";
+echo "El cercle de radi 5 té una àrea de: " . number_format($cercle->getArea(), 2, ".", " ") . "<br/>";
