@@ -1,5 +1,5 @@
 # Sprint 1  
-## PHP bàsics Tema 4: POO 1   
+## PHP bàsics Tema 5: POO 2   
 Contingut base de l'activitat:  
 - `nivell1.php`  
 - `nivell2.php`  
