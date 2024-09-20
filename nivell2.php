@@ -11,20 +11,20 @@ if(file_exists(UTILS_LOCAL)){
 
 abstract class Shape{
     public function __construct(
-        protected int|float $ample,
-        protected int|float $alt,
+        protected float $ample,
+        protected float $alt,
     ){}
 
-    abstract function getArea(): int|float;
+    abstract function getArea();
 }
 
 class Triangle extends Shape{
-    public function getArea(): int|float{
+    public function getArea(): float{
         return $this->ample * $this->alt / 2;
     }
 }
 class Rectangle extends Shape{
-    public function getArea(): int|float{
+    public function getArea(): float{
         return $this->ample * $this->alt;
     }
 }

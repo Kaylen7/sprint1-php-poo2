@@ -19,7 +19,7 @@ class Cercle extends Shape{
         parent::__construct($this->radi * 2, $this->radi * 2);
     }
 
-    public function getArea(): int|float{
+    public function getArea(): float{
         return (($this->radi**2) * pi());
     }
 }
