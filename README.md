@@ -8,3 +8,4 @@ Contingut base de l'activitat:
 Contingut extra:  
 - `utils.php` 
 - **nivell 1:** He afegit paràmetre `gender` per incloure les variants lingüístiques a l'output de `makeSound()`.  
+- **nivell 1** He afegit funció `fesQueParli()` per mostrar el polimorfisme. 
