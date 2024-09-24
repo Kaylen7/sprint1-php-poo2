@@ -11,20 +11,29 @@ if(file_exists(UTILS_LOCAL)){
 
 abstract class Shape{
     public function __construct(
-        protected float $ample,
-        protected float $alt,
+        protected float|null $ample = null,
+        protected float|null $alt = null,
     ){}
 
     abstract function getArea();
 }
 
 class Triangle extends Shape{
-    public function getArea(): float{
+
+    public function getArea(): float|null{
+        if (!$this->ample || !$this->alt){
+            return null;
+        }
         return $this->ample * $this->alt / 2;
     }
 }
 class Rectangle extends Shape{
-    public function getArea(): float{
+
+    public function getArea(): float|null{
+        if (!$this->ample || !$this->alt){
+            return null;
+        }
+        
         return $this->ample * $this->alt;
     }
 }
